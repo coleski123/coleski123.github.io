@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CalendarIconDateSettings</key>
+	<dict>
+		<key>FontSize</key>
+		<integer>30</integer>
+		<key>ShadowBlurRadius</key>
+		<integer>0</integer>
+		<key>ShadowColor</key>
+		<string>#cecece</string>
+		<key>ShadowXoffset</key>
+		<real>0.0</real>
+		<key>ShadowYoffset</key>
+		<real>0.0</real>
+		<key>TextColor</key>
+		<string>#ffffff</string>
+		<key>TextYoffset</key>
+		<real>12</real>
+	</dict>
+	<key>CalendarIconDateStyle</key>
+	<string>
+	padding: 0.5px 2px; 
+	color: #ffffff; 
+	font-size: 24px;
+	position: relative; top: 12px
+    </string>
+	<key>CalendarIconDaySettings</key>
+	<dict>
+		<key>FontSize</key>
+		<integer>15</integer>
+		<key>ShadowBlurRadius</key>
+		<integer>0</integer>
+		<key>ShadowColor</key>
+		<string>#f2625b</string>
+		<key>ShadowXoffset</key>
+		<real>0.0</real>
+		<key>ShadowYoffset</key>
+		<real>0.0</real>
+		<key>TextColor</key>
+		<string>#ffffff</string>
+	</dict>
+	<key>CalendarIconDayStyle</key>
+	<string>
+	visibility: visible; 
+	position: relative; top: 12px; 
+	color:#ffffff; 
+	font-size: 30px;
+    </string>
+	<key>IB-MaskIcons</key>
+	<true/>
+	<key>PackageName</key>
+	<string>PavDark</string>
+</dict>
+</plist>
