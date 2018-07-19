@@ -4,7 +4,7 @@ Architecture: iphoneos-arm
 Maintainer: Coleski123 <coleski123@gmail.com>
 Depends: com.anemonetheming.anemone
 Filename: /PavDarkTheme.deb
-Size: 430528
+Size: 430482
 MD5sum: 49cb85cd61630fdd8d462c42326998fc
 SHA1: 188a189da87a2007ba38250a627cd72833620676
 SHA256: df31c95409e8f827d3c70347f8813b94c8e2fc4e6a8392193863f987c84c3b58
