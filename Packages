@@ -1,13 +1,13 @@
 Package: com.coleski123.pavdark
-Version: 3.2
+Version: 3.3
 Architecture: iphoneos-arm
 Maintainer: Coleski123 <coleski123@gmail.com>
 Depends: com.anemonetheming.anemone
 Filename: /PavDarkTheme.deb
 Size: 430468
-MD5sum: 6418642db0a2304bddcbb3d6c9b8a903
-SHA1: afdfdba50f6019b191a53b57248e69b787ba49d8
-SHA256: 1386d03435a77a66d2a02740bf0072fdec357388edb5e7ed37190f5bc4ec525f
+MD5sum: c5e1ee4ec70e3c0fda3f0018614c34c4
+SHA1: 92fa4c8d747b655db202afff009e885dea14029b
+SHA256: 29b50448701e05d62fd4db96b0f82148775d4f4beaa1b591ac140b8d94cc3726
 Section: Themes
 Description: A dark IOS 11 Icon theme for Iphone/Ipad running anemone. Most default IOS apps are dark but not all. Updates Coming Soon.
 Author: Coleski123 <coleski123@gmail>
