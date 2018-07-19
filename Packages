@@ -2,7 +2,7 @@ Package: com.coleski123.pavdark
 Version: 4.0
 Architecture: iphoneos-arm
 Maintainer: Coleski123 <coleski123@gmail.com>
-Depends: com.anemonetheming.anemone
+Depends:
 Filename: /PavDarkTheme.deb
 Size: 430476
 MD5sum: 576e53642a2bf5d235a9869e124e09c0
