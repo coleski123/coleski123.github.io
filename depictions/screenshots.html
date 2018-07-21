@@ -1,135 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Screenshots</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
- 
-  <script type="text/javascript" src="js/jquery.querystring.js"></script>
-  <script type="text/javascript" src="js/data-loader-engine.js"></script>
-  <script type="text/javascript" src="js/ios_version_check.js"></script>
-  <style>
-	@media (max-width: 767px) {
-		body{background:#efeff4!important;margin:0;padding:0;border:0;outline:0;box-sizing:border-box}
-	}  
-  </style>
-  <script type="text/javascript">
-  
-	bundleid = $.QueryString['p'];	
 
-    var contentBlocks = 	{
-        "#screenshotsList"	: 
-			{"type":"custom"  
-				,"source" :"package>screenshots>screenshot"
-				,"render" : function(element,source){
-				console.log($(source).size());
-					if ($(source).size()==0) {
-						$(element).append( $("<div class='alert alert-danger'>The aren't any screenshots for this package</div>") ); 
-						return;
-					}
-					$.each(source, function(index,data) {
-						var th = $("<div class='thumbnail'>");
-						th.append($("<p>")
-							.text($(data).find('description').text())
-						)
-						th.append($("<img>")
-							.attr("src",bundleid+'/screenshots/'+$(data).find('image').text())
-						)
-						$(element).append(th);
-					});
-					
-				}
-			}
-	}
-    $( document ).ready(function() {
-        $.ajax({
-            type    : "GET",
-            dataType: "xml",
-            url     : (bundleid+"/info.xml"),
-            success : function(xml){
-				document.title = $(xml).find("package>name").text();
-            	data_loader_engine(contentBlocks,xml)
-            },
-			cache   : false,
-            error: function() {
-                $("#packageError").show();
-				$("#packageInformation").hide();
-            }
-        }); //ajax
-		
-    }); // ready
-  </script>
-</head>
-<body>
-<br />
+  <head>
 
-<div id="packageInformation">
-	<div class="container">
-		<h5>SCREENSHOTS</h5>
-		<ul id="screenshotsList" class="list-group">
-		</ul>
-	</div>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coleski123's Repo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 20px;
+        }
+      }
+        body,h1,a {font-family: "Poppins", sans-serif}
+body,a, html {height: 100%}
+.bgimg {
+    background-image: url('http://hdqwalls.com/wallpapers/blur-background-6z.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <center><ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://coleski123.github.io/depictions">PavDark</a>
+            </li>
+          </ul></center>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo  w3-animate-top">Coleski123</h1>
+    <hr class="mb-3 w3-border-grey  w3-animate-top" style="margin:auto;width:40%">
+    <p class="w3-large w3-center  w3-animate-top">coleski123.github.io</p>
+	<center><a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://coleski123.github.io"><img src="icon.png" class="mb-3 w3-animate-top" width="60" height="60" title="cydia" alt="cydia"></a></center>
+	<p class="w3-center  w3-animate-top">Press the Cydia icon to install.</p>
+  </div>
 </div>
-<div id="packageError" style="display:none">
-	<div class="container">
-	  <div class="alert alert-danger">
-		<strong>Oh snap!</strong> The package you are tying to view is not hosted on this repository. 
-	  </div>
-	</div>
-</div>
-<!-- REPO FOOTER -->
-<script type="text/javascript">
-    var repoContents = 	{
-		"#repoFooterLinks" : 
-			{"type":"custom"
-				,"source":"repo>footerlinks>link"
-				,"render":function(element,source) {
-					$.each(source, function(index,data) {
-						var a = $("<a class='link-item list-group-item'>");
-						a.attr("href",$(data).find('url').text());
-						if ($(data).find('iconclass')) {
-							var i =  $("<span>")
-							i.attr("class",$(data).find('iconclass').text());
-							console.log(i);
-							$(a).append(i);
-						} 
-						$(a).append($(data).find('name').text());
-						$(element).append(a);
-					}); //each
-				} //render
-			}
-	}
-    $( document ).ready(function() {
-        $.ajax({type: "GET", dataType: "xml",url : ("../repo.xml"),cache: false,
-            success : function(xml){
-				data_loader_engine(repoContents,xml);
-				if (navigator.userAgent.search(/Cydia/) != -1) {
-					$("a").each(function() {
-						console.log($(this).text());
-						$(this).attr("target","_blank");
-					});
-				}
-			},
-            error: function() {$("#contactInfo").hide()}
-        }); //ajax
-		
-		
-    }); // ready
 
-</script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<div id="contactInfo">
-	<div class="container">
-		<h5>CONTACT</h5>
-		<ul class="list-group" id="repoFooterLinks">
-		</ul>
-	</div>
-</div>
-<!-- REPO FOOTER ENDS -->
+  </body>
 
-</body>
 </html>
