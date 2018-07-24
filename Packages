@@ -13,3 +13,19 @@ Description: A dark IOS 11 Icon theme for Iphone/Ipad running anemone.----If you
 Author: Coleski123 <coleski123@gmail.com>
 Name: PavDark
 Screenshots: https://coleski123.github.io/depictions/
+
+Package: com.coleski123.pulasan
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Coleski123 <coleski123@gmail.com>
+Depends:
+Filename: /Pulasan Theme.deb
+Size: 325000
+MD5sum: b654447ce74a43d383d853add26e6c2a
+SHA1: 7436b006a2073094199637084c7a35cb2461be43
+SHA256: fc888fdf391b5bd5895023eb8b0cb1eb698213746ed47bbf03c4001c787dc3ff
+Section: Themes
+Description: A nice smooth theme for Iphone and Ipad running IOS 11 - 11.3.1 No screenshots ATM you can find them here https://i.imgur.com/6G0AlOx.png
+Author: Coleski123 <coleski123@gmail.com>
+Name: Pulasan
+Screenshots: https://i.imgur.com/6G0AlOx.png
