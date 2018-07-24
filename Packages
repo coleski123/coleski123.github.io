@@ -12,7 +12,6 @@ Section: Themes
 Description: A dark IOS 11 Icon theme for Iphone/Ipad running anemone.----If your clock icon doesnt change respring your device---- Most default IOS apps are dark but not all. Updates Coming Soon. Dont have screenshots added yet but in the meantime here is a link to them https://imgur.com/gallery/0Yh3MD2
 Author: Coleski123 <coleski123@gmail.com>
 Name: PavDark
-Screenshots: https://coleski123.github.io/depictions/
 
 Package: com.coleski123.pulasan
 Version: 1.0
@@ -28,4 +27,3 @@ Section: Themes
 Description: A nice smooth theme for Iphone and Ipad running IOS 11 - 11.3.1 No screenshots ATM you can find them here https://i.imgur.com/6G0AlOx.png
 Author: Coleski123 <coleski123@gmail.com>
 Name: Pulasan
-Screenshots: https://i.imgur.com/6G0AlOx.png
