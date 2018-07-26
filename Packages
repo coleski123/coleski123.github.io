@@ -15,15 +15,15 @@ Name: PavDark
 Depiction: http://coleski123.github.io/description.html?id=com.coleski123.pavdark
 
 Package: com.coleski123.pulasan
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
 Maintainer: Coleski123 <coleski123@gmail.com>
 Depends:
 Filename: /pulasantheme.deb
 Size: 324820
-MD5sum: d3a613041f0e04411ae521d58ee64f3a
-SHA1: 48af4fbd7faae6d43755dcba6779edba6940d4c2
-SHA256: 778cd524bc31551dbea3d55d057835c1b65a97a11e95f543bc74b71555631bf2
+MD5sum: 7720de208ea13fd07e20389fcf5d4c34
+SHA1: 4f3ce6d4f83d76e45996fb53e95e75805f5d71d5
+SHA256: b69da84553f0d62aa6612d4d5710d5d59b4146276c65500e9ad30a5900989b12
 Section: Themes
 Description: A sleek theme for anemone.
 Author: Coleski123 <coleski123@gmail.com>
